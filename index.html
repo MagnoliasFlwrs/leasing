@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="content header__box">
+                <a class="logo" href="./index.html"><img src="./src/assets/Лого.png" alt="logo" width="188" height="73"></a>
+                <div class="navigation">
+                    <ul class="menu__wrapper">
+                        <li class="link__wrapper">
+                            <a class="links__font__style dropdown  " href="#">Продукты </a>
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    <a class="links__font__style" href="#">Заголовок 1</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a class="links__font__style" href="#">Заголовок 2</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a class="links__font__style" href="#">Заголовок 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="link__wrapper">
+                            <a class="links__font__style dropdown " href="#">Партнеры </a>
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    <a class="links__font__style" href="#">заголовок 1</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a class="links__font__style" href="#">заголовок 2</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a class="links__font__style" href="#">заголовок 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="link__wrapper">
+                            <a class="links__font__style dropdown " href="#">О нас </a>
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    <a class="links__font__style" href="#">заголовок 1</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a class="links__font__style" href="#">заголовок 2</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a class="links__font__style" href="#">заголовок 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="link__wrapper navigation__button">
+                            <button class="nav__btn" type="button">Войти</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="burger__nav">
+                    <div class="burger">
+                        <span class="bar menu-top"></span>
+                        <span class="bar menu-middle"></span>
+                        <span class="bar menu-bottom"></span>
+                    </div>
+                    <div class="burger__wrap">
+                        <ul class="burger__links">
+                            <li class="burger__link__item link__wrap">
+                                 <a class="burger__link  links__font__style burger__link__dropdown dropright" href="#">Продукты </a>
+                                 <div class="burger__submenu">
+                                    <div class="link__wrap"><a class="mobile__back__link links__font__style dropleft" href="#">Назад</a></div>
+                                    <div class="burger__submenu__item">
+                                        <div class="link__wrap"><a class=" burger__link  links__font__style" href="№">заголовок 1</a></div>
+                                    </div>
+                                    <div class="burger__submenu__item">
+                                        <div class="link__wrap"><a class=" burger__link links__font__style" href="№">заголовок 1</a></div>
+                                    </div>
+                                    <div class="burger__submenu__item">
+                                        <div class="link__wrap"><a class=" burger__link links__font__style " href="№">заголовок 1</a></div>
+                                    </div>
+                                <div>
+                            </li>
+                            <li class="burger__link__item link__wrap">
+                                <a class="burger__link  links__font__style burger__link__dropdown dropright" href="#">Патнерам </a>
+                                <div class="burger__submenu">
+                                   <div class="link__wrap"><a class="mobile__back__link links__font__style dropleft" href="#">Назад</a></div>
+                                   <div class="burger__submenu__item">
+                                       <div class="link__wrap"><a class=" burger__link  links__font__style" href="№">заголовок 1</a></div>
+                                   </div>
+                                   <div class="burger__submenu__item">
+                                       <div class="link__wrap"><a class=" burger__link links__font__style" href="№">заголовок 1</a></div>
+                                   </div>
+                                   <div class="burger__submenu__item">
+                                       <div class="link__wrap"><a class=" burger__link links__font__style " href="№">заголовок 1</a></div>
+                                   </div>
+                               <div>
+                           </li>
+                           <li class="burger__link__item link__wrap">
+                            <a class="burger__link  links__font__style burger__link__dropdown dropright" href="#">О нас </a>
+                            <div class="burger__submenu">
+                               <div class="link__wrap"><a class="mobile__back__link links__font__style dropleft" href="#">Назад</a></div>
+                               <div class="burger__submenu__item">
+                                   <div class="link__wrap"><a class=" burger__link  links__font__style" href="№">заголовок 1</a></div>
+                               </div>
+                               <div class="burger__submenu__item">
+                                   <div class="link__wrap"><a class=" burger__link links__font__style" href="№">заголовок 1</a></div>
+                               </div>
+                               <div class="burger__submenu__item">
+                                   <div class="link__wrap"><a class=" burger__link links__font__style " href="№">заголовок 1</a></div>
+                               </div>
+                           <div>
+                       </li>
+
+                            <li class="burger__link__item link__wrap"><a class="burger__link links__font__style" href="#">Войти</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <button class="intro__button"> Стать клиентом </button>
+        </section>
+        <section class="promo">
+            <div class="content">
+                <div class="promo__wrapper">
+                    <h2>Предметы лизинга</h2>
+                <div class="promo__choice">
+                    <a class="promo__choice-tittle active__tittle">Для частных лиц</a>
+                    <a class="promo__choice-tittle"> Для бизнеса</a>
+                </div>
+                <!-- <div class="itc-slider">
+                    <div class="itc-slider__wrapper">
+                        <div class="itc-slider__items">
+                            <div class="itc-slider__item">
+                                <div class="promo__card">
+                                    <h3 class="promo__card-title"> Авто с пробегом </h3>
+                                    <div class="promo__img-wrap">
+                                        <ul>
+                                            <li>
+                                                Аванс: от 20%
+                                            </li>
+                                            <li>
+                                                Срок: от 12 до 60 месяцев
+                                            </li>
+                                            <li>
+                                                Валюты: BYN, USD, EUR, RUB
+                                            </li>
+                                        </ul>
+                                        <img class="promo__image" src="./src/images/promo/524164503737228.webp" alt="">
+                                    </div>
+                                    <div class="promo__sale">
+                                        <div class="promo__sale-action">
+                                            <button>Оставить заявку</button>
+                                            <a href="#" class="promo__sale-link dropright"> Подробнее </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itc-slider__item">
+                                <div class="promo__card">
+                                    <h3 class="promo__card-title"> Новые авто </h3>
+                                    <div class="promo__img-wrap">
+                                        <ul>
+                                            <li>
+                                                Аванс: от 20%
+                                            </li>
+                                            <li>
+                                                Срок: от 12 до 60 месяцев
+                                            </li>
+                                            <li>
+                                                Валюты: BYN, USD, EUR, RUB
+                                            </li>
+                                        </ul>
+                                        <img src="./src/images/promo/2.webp" alt="">
+                                    </div>
+                                    <div class="promo__sale">
+                                        <div class="promo__sale-action">
+                                            <button>Оставить заявку</button>
+                                            <a href="#" class="promo__sale-link dropright"> Подробнее </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itc-slider__item">
+                                <div class="promo__card">
+                                    <h3 class="promo__card-title"> Авто из-за границы </h3>
+                                    <div class="promo__img-wrap">
+                                        <ul>
+                                            <li>
+                                                Аванс: от 20%
+                                            </li>
+                                            <li>
+                                                Срок: от 12 до 60 месяцев
+                                            </li>
+                                            <li>
+                                                Валюты: BYN, USD, EUR, RUB
+                                            </li>
+                                        </ul>
+                                        <img src="./src/images/promo/3.webp" alt="">
+                                    </div>
+                                    <div class="promo__sale">
+                                        <div class="promo__sale-action">
+                                            <button>Оставить заявку</button>
+                                            <a href="#" class="promo__sale-link dropright"> Подробнее </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itc-slider__item">
+                                <div class="promo__card">
+                                    <h3 class="promo__card-title"> Мотоциклы </h3>
+                                    <div class="promo__img-wrap">
+                                        <ul>
+                                            <li>
+                                                Аванс: от 20%
+                                            </li>
+                                            <li>
+                                                Срок: от 12 до 36 месяцев
+                                            </li>
+                                            <li>
+                                                Валюты: BYN, USD, EUR, RUB
+                                            </li>
+                                        </ul>
+                                        <img src="./src/images/promo/4.webp" alt="">
+                                    </div>
+                                    <div class="promo__sale">
+                                        <div class="promo__sale-action">
+                                            <button>Оставить заявку</button>
+                                            <a href="#" class="promo__sale-link dropright"> Подробнее </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itc-slider__item">
+                                <div class="promo__card">
+                                    <h3 class="promo__card-title"> Садовая техника </h3>
+                                    <div class="promo__img-wrap">
+                                        <ul>
+                                            <li>
+                                                Аванс: от 20%
+                                            </li>
+                                            <li>
+                                                Срок: от 12 до 60 месяцев
+                                            </li>
+                                            <li>
+                                                Валюты: BYN, USD, EUR, RUB
+                                            </li>
+                                        </ul>
+                                        <img src="./src/images/promo/5.webp" alt="">
+                                    </div>
+                                    <div class="promo__sale">
+                                        <div class="promo__sale-action">
+                                            <button>Оставить заявку</button>
+                                            <a href="#" class="promo__sale-link dropright"> Подробнее </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itc-slider__item">
+                                <div class="promo__card">
+                                    <h3 class="promo__card-title"> Техника для активного отдыха </h3>
+                                    <div class="promo__img-wrap">
+                                        <ul>
+                                            <li>
+                                                Аванс: от 20%
+                                            </li>
+                                            <li>
+                                                Срок: от 12 до 60 месяцев
+                                            </li>
+                                            <li>
+                                                Валюты: BYN, USD, EUR, RUB
+                                            </li>
+                                        </ul>
+                                        <img src="./src/images/promo/6.webp" alt="">
+                                    </div>
+                                    <div class="promo__sale">
+                                        <div class="promo__sale-action">
+                                            <button>Оставить заявку</button>
+                                            <a href="#" class="promo__sale-link dropright"> Подробнее </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="itc-slider__btn itc-slider__btn_prev"></button>
+                    <button class="itc-slider__btn itc-slider__btn_next"></button>
+                </div> -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide">
+                        <div class="promo__card">
+                            <h3 class="promo__card-title"> Авто с пробегом </h3>
+                            <div class="promo__img-wrap">
+                                <ul>
+                                    <li>
+                                        Аванс: от 20%
+                                    </li>
+                                    <li>
+                                        Срок: от 12 до 60 месяцев
+                                    </li>
+                                    <li>
+                                        Валюты: BYN, USD, EUR, RUB
+                                    </li>
+                                </ul>
+                                <img class="promo__image" src="./src/images/promo/524164503737228.webp" alt="">
+                            </div>
+                            <div class="promo__sale">
+                                <div class="promo__sale-action">
+                                    <button>Оставить заявку</button>
+                                    <a href="#" class="promo__sale-link dropright"> Подробнее </a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="promo__card">
+                            <h3 class="promo__card-title"> Новые авто </h3>
+                            <div class="promo__img-wrap">
+                                <ul>
+                                    <li>
+                                        Аванс: от 20%
+                                    </li>
+                                    <li>
+                                        Срок: от 12 до 60 месяцев
+                                    </li>
+                                    <li>
+                                        Валюты: BYN, USD, EUR, RUB
+                                    </li>
+                                </ul>
+                                <img src="./src/images/promo/2.webp" alt="">
+                            </div>
+                            <div class="promo__sale">
+                                <div class="promo__sale-action">
+                                    <button>Оставить заявку</button>
+                                    <a href="#" class="promo__sale-link dropright"> Подробнее </a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="promo__card">
+                            <h3 class="promo__card-title"> Авто из-за границы </h3>
+                            <div class="promo__img-wrap">
+                                <ul>
+                                    <li>
+                                        Аванс: от 20%
+                                    </li>
+                                    <li>
+                                        Срок: от 12 до 60 месяцев
+                                    </li>
+                                    <li>
+                                        Валюты: BYN, USD, EUR, RUB
+                                    </li>
+                                </ul>
+                                <img src="./src/images/promo/3.webp" alt="">
+                            </div>
+                            <div class="promo__sale">
+                                <div class="promo__sale-action">
+                                    <button>Оставить заявку</button>
+                                    <a href="#" class="promo__sale-link dropright"> Подробнее </a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="promo__card">
+                            <h3 class="promo__card-title"> Мотоциклы </h3>
+                            <div class="promo__img-wrap">
+                                <ul>
+                                    <li>
+                                        Аванс: от 20%
+                                    </li>
+                                    <li>
+                                        Срок: от 12 до 36 месяцев
+                                    </li>
+                                    <li>
+                                        Валюты: BYN, USD, EUR, RUB
+                                    </li>
+                                </ul>
+                                <img src="./src/images/promo/4.webp" alt="">
+                            </div>
+                            <div class="promo__sale">
+                                <div class="promo__sale-action">
+                                    <button>Оставить заявку</button>
+                                    <a href="#" class="promo__sale-link dropright"> Подробнее </a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="promo__card">
+                            <h3 class="promo__card-title"> Садовая техника </h3>
+                            <div class="promo__img-wrap">
+                                <ul>
+                                    <li>
+                                        Аванс: от 20%
+                                    </li>
+                                    <li>
+                                        Срок: от 12 до 60 месяцев
+                                    </li>
+                                    <li>
+                                        Валюты: BYN, USD, EUR, RUB
+                                    </li>
+                                </ul>
+                                <img src="./src/images/promo/5.webp" alt="">
+                            </div>
+                            <div class="promo__sale">
+                                <div class="promo__sale-action">
+                                    <button>Оставить заявку</button>
+                                    <a href="#" class="promo__sale-link dropright"> Подробнее </a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="promo__card">
+                            <h3 class="promo__card-title"> Техника для активного отдыха </h3>
+                            <div class="promo__img-wrap">
+                                <ul>
+                                    <li>
+                                        Аванс: от 20%
+                                    </li>
+                                    <li>
+                                        Срок: от 12 до 60 месяцев
+                                    </li>
+                                    <li>
+                                        Валюты: BYN, USD, EUR, RUB
+                                    </li>
+                                </ul>
+                                <img src="./src/images/promo/6.webp" alt="">
+                            </div>
+                            <div class="promo__sale">
+                                <div class="promo__sale-action">
+                                    <button>Оставить заявку</button>
+                                    <a href="#" class="promo__sale-link dropright"> Подробнее </a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-scrollbar"></div>
+                  </div>
+            </div>
+            </div>
+
+        </section>
+        <section class="record__form">
+            <div class="content">
+                <div class="record__form-wrap">
+                    <div class="record__form-title">
+                        <h2>Пора стать клиентом</h2>
+                    </div>
+                    <form  class="record__form-client">
+                        <input  type="number" placeholder="Контактный номер телефона">
+                        <div class="form__client-wrap">
+                            <input type="text" name="" placeholder="Как к вам обратиться?">
+                            <input type="text" placeholder="Ссылка (URL) на объявление">
+                        </div>
+                        <button type="submit">Оставить заявку</button>
+                        <div class="form__client-check">
+                            <input type="checkbox" name="form__client-check">
+                            <label for="form__client-check">Соглашаюсь на получение рекламы</label>
+                        </div>
+                        <p>Оставляя заявку, вы соглашаетесь на <a href="#">обработку персональных данных </a> и <a href="#">условиями бронирования счета</a></p>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <section class="questios">
+            <div class="content">
+                <h2>Справочная информация</h2>
+                <div class="questions__examples">
+                    <div class="questions__card">
+                        <img src="./src/images/questions/allo0@2x.webp" alt="questions__card__img" width="360" height="180">
+                        <div class="questions__info">
+                            <h3>Шаблоны документов</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla et facilis hic atque velit beatae esse impedit dolore modi autem.</p>
+                        </div>
+                    </div>
+                    <div class="questions__card">
+                        <img src="./src/images/questions/allo1@2x.webp" alt="questions__card__img" width="360" height="180">
+                        <div class="questions__info">
+                            <h3>Задать вопрос</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla et facilis hic atque velit beatae esse impedit dolore modi autem.</p>
+                        </div>
+                    </div>
+                    <div class="questions__card">
+                        <img src="./src/images/questions/allo1@2x.webp" alt="questions__card__img" width="360" height="180">
+                        <div class="questions__info">
+                            <h3>Задать вопрос</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla et facilis hic atque velit beatae esse impedit dolore modi autem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="content">
+                <h2 class="dropright">Hовости компании</h2>
+                <div class="news__wrapper">
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="content">
+            <h2>footer</h2>
+        </div>
+
+    </footer>
+    <!-- <script src="./src/script/itc-slider.js" ></script> -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="./src/script/itc-slider.min.js "></script>
+    <script type="module" src="./src/script/script.js"></script>
+</body>
+</html>
