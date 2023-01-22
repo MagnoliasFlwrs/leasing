@@ -11,6 +11,7 @@ const linkWraps = document.querySelectorAll('.link__wrapper')
 const overlay = document.querySelector('.overlay');
 const burgerLinks = document.querySelectorAll('.burger__navigation__item')
 
+// slider
 slides.forEach((slide) => {
   slide.addEventListener('mouseenter' ,() => {
     sliderBtnNext.style.visibility = 'visible'
@@ -25,7 +26,11 @@ newsSlider.addEventListener('mouseleave' , ()=> {
   sliderBtnNext.style.visibility = 'hidden'
   sliderBtnPrev.style.visibility = 'hidden'
 })
+// scroll
 
+let scrollpos = window.scrollY
+
+const header = document.querySelector("header")
 const scrollChange = 10
 
 const add_class_on_scroll = () => header.classList.add("_onscroll")
@@ -38,7 +43,7 @@ window.addEventListener('scroll', function() {
   else { remove_class_on_scroll() }
 
 })
-
+//
 overlay.addEventListener('click', () => {
     overlay.classList.remove('open');
 });
@@ -63,4 +68,37 @@ burgerLinks.forEach((link) => {
         overlay.classList.remove('open');
         document.body.classList.remove('_lock');
     })
+})
+function clearClasses(e) {
+  if (e.target.classList.contains('mobile__back__link')) {
+      e.preventDefault();
+  e.target.closest('.burger__submenu').classList.remove('__transform');
+  e.target.closest('.burger__wrap').querySelector('.burger__links').classList.remove('__transform');
+  }
+}
+burgerWrap.addEventListener('click', (e) => {
+if (e.target.classList.contains('burger__link__dropdown')) {
+  e.preventDefault();
+  e.target.closest('.burger__links').classList.add('__transform');
+  e.target.closest('.burger__link__item').querySelector('.burger__submenu').classList.add('__transform');
+}
+  clearClasses(e)
+});
+linksToSecond.forEach((link) => {
+  link.addEventListener('click' ,(e) => {
+      clearClasses(e)
+      e.target.closest('.burger__submenu__item').querySelector('.second__menu').classList.add('__transformation');
+      linksToSecond.forEach((link) => {
+          link.classList.remove('dropright')
+      })
+  })
+})
+secondMobileBack.forEach((link) => {
+  link.addEventListener('click', (e) => {
+      e.target.closest('.burger__submenu__item').querySelector('.second__menu').classList.remove('__transformation');
+      e.target.closest('.burger__link__item').querySelector('.burger__submenu').classList.add('__transform');
+      linksToSecond.forEach((link) => {
+          link.classList.add('dropright')
+      })
+  })
 })

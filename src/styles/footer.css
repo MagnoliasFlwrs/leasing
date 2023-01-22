@@ -20,17 +20,18 @@
     border-radius: 50%;
 }
 .footer__body {
-    display: grid;
-    grid-template-columns: auto auto;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
         "big-menu chats-wrapper"
         "small-menu form"
         "contacts form";
+    justify-content: space-between; */
+    display: flex;
     justify-content: space-between;
 }
-.footer__left {
-}
+
 .footer__big-menu {
     grid-area: big-menu;
     display: flex;
@@ -220,4 +221,9 @@
 .footer__caption-right a {
     color: #f5f5f7;
     transition: color .2s;
+}
+@media (max-width:600px) {
+    .footer__body {
+        flex-direction: column;
+    }
 }

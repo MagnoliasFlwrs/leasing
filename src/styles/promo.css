@@ -230,5 +230,10 @@
     font-weight: 600;
     font-size: 1em;
 }
+@media (max-width:780px) {
+    .swiper {
+        overflow: hidden !important;
+    }
+}
 
 

@@ -89,3 +89,8 @@
 .news-poster__text {
     margin-top: 16px;
 }
+@media (max-width:780px) {
+    .swiper {
+        overflow: hidden !important;
+    }
+}

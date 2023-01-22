@@ -29,3 +29,14 @@
     object-position: center;
     margin-bottom: 15px;
 }
+@media (max-width : 600px) {
+    .questions__examples {
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 30;
+    }
+    .questions__card {
+        margin: 0 auto;
+    }
+
+}

@@ -173,6 +173,21 @@
         padding: 30px 10px;
     }
 }
+@media (max-width: 985px) {
+    .logo > img {
+        width: 75%;
+        height: 75%;
+    }
+    .logo {
+        left: 12px;
+    }
+    .navigation {
+        display: none;
+    }
+    .burger__nav {
+        display: block !important;
+    }
+}
 @media (max-width:970px) {
     .links__font__style {
         font-size: 14px;
@@ -188,18 +203,3 @@
     }
 } */
 
-@media (max-width: 985px) {
-    .logo > img {
-        width: 75%;
-        height: 75%;
-    }
-    .logo {
-        left: 12px;
-    }
-    .navigation {
-        display: none;
-    }
-    .burger__nav {
-        display: block;
-    }
-}
