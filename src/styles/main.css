@@ -8,6 +8,7 @@
 @import url(./recordForm.css);
 @import url(./questions.css);
 @import url(./news.css);
+@import url(./footer.css);
 
 
 *{
@@ -25,6 +26,7 @@
     --lh-small:20px;
     --color-gray:#959595;
     --main-text-color : #191919 ;
+    --color-bg-3 : #343434;
 
 }
 ul , ol ,li {
@@ -70,4 +72,53 @@ p , a {
     font-weight: 400;
     text-decoration: none;
     color: #191919;
+}
+.slider_arrow--prev  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    color: var(--color-gray) ;
+    font-size: 2.5em;
+    z-index: 2;
+    background-color: rgba(17, 17, 17, 0.4);
+    border: none;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+}
+.slider_arrow--next {
+    right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-gray) ;
+    font-size: 2.5em;
+    z-index: 2;
+    background-color: rgba(17, 17, 17, 0.4);
+    border: none;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+}
+
+.slider-arrow  {
+    visibility: hidden;
+}
+.swiper-button-disabled {
+    visibility: hidden !important;
+}
+.product-slider__arrow {
+    color: #959595;
+}
+
+.slider-arrow:hover {
+    color: var(--color-red);
+
 }

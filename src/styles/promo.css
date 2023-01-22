@@ -44,34 +44,7 @@
     font-weight: 700;
     margin-bottom: 25px;
 }
-.promo__img-wrap {
-}
-/* .promo__img-wrap:after {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 272px;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    border-radius: 16px;
-    background-color: rgba(0, 0, 0, 0.3);
-} */
 
-.promo__image {
-}
-.promo__sale {
-}
-.promo__sale-action {
-}
-.promo__sale-link {
-}
-.dropright {
-}
-.v-sale-poster {
-}
 .sale-poster {
     display: flex;
     flex-direction: column;
@@ -86,7 +59,6 @@
 .sale-poster--alt {
     padding-top: 40px;
     transition: background-color .2s;
-    height: auto;
 }
 .sale-poster__title {
     font-size: 32px;
@@ -98,8 +70,7 @@
     min-height: 80px;
     margin: auto auto 0;
 }
-.flc {
-}
+
 .fc:first-child, .flc:first-child {
     margin-top: 0;
 }
@@ -138,8 +109,7 @@
     padding: 0 20px;
     margin-bottom: 30px;
 }
-.image {
-}
+
 .sale-poster__image {
     border-radius: 16px;
     display: block;
@@ -178,6 +148,7 @@
     transition: transform 0.5s ease-in-out;
     border-radius: 16px;
 }
+
 .sale-card {
     background-color: var(--color-brand);
     border-radius: 16px;
@@ -192,27 +163,22 @@
     margin-top: 30px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .sale-poster--alt .sale-card__action {
     margin-top: 0;
 }
-
 .sale-card__action-btn {
     flex: 0 0 auto;
-}
-.btn {
-}
-.btn--primary-white {
 }
 .sale-card__btn-arrow {
     flex: 0 0 auto;
     margin-left: 20px;
 }
-.btn-arrow {
-}
-.btn-arrow--white {
-}
 .btn-arrow__text {
+    font-style: 600;
+    font-size: 1em;
+    color: var(--color-white);
 }
 
 .sale-poster:hover .sale-poster__dd {
@@ -225,6 +191,7 @@
 
 .sale-poster:hover .sale-card {
     box-shadow: 0 -4px 44px 0 rgba(240, 50, 38, 0.5);
+
 }
 
 .sale-poster--alt:hover .sale-poster__dd {
@@ -234,6 +201,9 @@
 .sale-poster--alt:hover {
     background-color: var(--color-red);
     box-shadow: 0 -4px 44px 0 rgba(240, 50, 38, 0.5);
+}
+.sale-poster--alt:hover .sale-poster__dd  {
+    background-color: var(--color-red);
 }
 
 .sale-poster--alt:hover .sale-poster__title {
@@ -250,4 +220,15 @@
 .swiper {
     overflow: visible !important;
 }
+.sale-card__action-btn{
+    padding: 0 22px;
+    height: 40px;
+    border: none;
+    border-radius: 18px;
+    background-color: var(--color-white);
+    color: var(--color-red);
+    font-weight: 600;
+    font-size: 1em;
+}
+
 
