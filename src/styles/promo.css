@@ -247,4 +247,7 @@
 .sale-poster--alt:hover .text-guide ul > li::before {
     border-top: 2px solid var(--color-white);
 }
+.swiper {
+    overflow: visible !important;
+}
 
