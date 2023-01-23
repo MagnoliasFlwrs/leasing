@@ -10,17 +10,28 @@ const secondMobileBack = document.querySelectorAll('.mobile__back__link__second'
 const linkWraps = document.querySelectorAll('.link__wrapper')
 const overlay = document.querySelector('.overlay');
 const burgerLinks = document.querySelectorAll('.burger__navigation__item')
+const promoBtns = document.querySelectorAll('.promo-card__action-btn')
+const promoModal = document.querySelector('.modal__form')
+const closeModal = document.querySelector('.modal__form-close')
 
 // slider
 slides.forEach((slide) => {
   slide.addEventListener('mouseenter' ,() => {
     sliderBtnNext.style.visibility = 'visible'
-    sliderBtnPrev.style.visibility = 'visible'  // sliderBtnPrev.addEventListener()
+    sliderBtnPrev.style.visibility = 'visible'
   })
 })
+
+
 newsSlider.addEventListener('mouseenter' , ()=> {
-    sliderBtnNext.style.visibility = 'visible'
-    sliderBtnPrev.style.visibility = 'visible'
+    if (sliderBtnNext.classList.contains('.swiper-button-disabled')) {
+      sliderBtnPrev.style.visibility = 'visible'
+    } else if (sliderBtnPrev.classList.contains('.swiper-button-disabled')) {
+      sliderBtnNext.style.visibility = 'visible'
+    } else {
+      sliderBtnNext.style.visibility = 'visible'
+      sliderBtnPrev.style.visibility = 'visible'
+    }
 })
 newsSlider.addEventListener('mouseleave' , ()=> {
   sliderBtnNext.style.visibility = 'hidden'
@@ -102,3 +113,22 @@ secondMobileBack.forEach((link) => {
       })
   })
 })
+// promo modal
+
+promoBtns.forEach((btn) => {
+  btn.addEventListener('click' , () => {
+    overlay.classList.add('open')
+    promoModal.classList.add('opn')
+  })
+})
+const modalClose = () => {
+  closeModal.addEventListener('click' , () => {
+    promoModal.classList.remove('opn')
+    overlay.classList.remove('open')
+  })
+  overlay.addEventListener('click' , () => {
+    promoModal.classList.remove('opn')
+    overlay.classList.remove('open')
+  })
+}
+modalClose()

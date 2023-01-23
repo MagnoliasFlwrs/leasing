@@ -45,7 +45,7 @@
     margin-bottom: 25px;
 }
 
-.sale-poster {
+.promo-poster {
     display: flex;
     flex-direction: column;
     border-radius: 16px;
@@ -56,11 +56,11 @@
     position: relative;
     background-color: var(--color-bg-2);
 }
-.sale-poster--alt {
+.promo-poster--alt {
     padding-top: 40px;
     transition: background-color .2s;
 }
-.sale-poster__title {
+.promo-poster__title {
     font-size: 32px;
     line-height: 40px;
     text-align: center;
@@ -74,11 +74,11 @@
 .fc:first-child, .flc:first-child {
     margin-top: 0;
 }
-.sale-poster--alt .sale-poster__title {
+.promo-poster--alt .promo-poster__title {
     transition: color .2s;
     min-height: 0;
 }
-.sale-poster--alt .sale-poster__image-wrap {
+.promo-poster--alt .promo-poster__image-wrap {
     margin-top: auto;
 }
 .text-guide {
@@ -93,7 +93,7 @@
     padding-left: 28px;
     position: relative;
 }
-.sale-poster--alt .text-guide ul > li::before {
+.promo-poster--alt .text-guide ul > li::before {
     transition: border .2s;
 }
 .text-guide ul > li::before {
@@ -104,13 +104,13 @@
     width: 16px;
     border-top: 2px solid var(--color-red);
 }
-.sale-poster__content {
+.promo-poster__content {
     margin-top: 15px;
     padding: 0 20px;
     margin-bottom: 30px;
 }
 
-.sale-poster__image {
+.promo-poster__image {
     border-radius: 16px;
     display: block;
     width: 100%;
@@ -118,10 +118,10 @@
     object-fit: cover;
     max-width: 100%;
 }
-.sale-poster--alt .sale-poster__dd-arrow-wrapper {
+.promo-poster--alt .promo-poster__dd-arrow-wrapper {
     display: none;
 }
-.sale-poster__dd-arrow-wrapper {
+.promo-poster__dd-arrow-wrapper {
     position: absolute;
     left: 50%;
     z-index: 2;
@@ -129,7 +129,7 @@
     transform: translateX(-50%);
     transition: top 0.5s ease-in-out;
 }
-.sale-poster__dd-arrow {
+.promo-poster__dd-arrow {
     height: 28px;
     width: 64px;
     border-radius: 16px;
@@ -137,7 +137,7 @@
     backdrop-filter: saturate(180%) blur(8px);
     background-color: rgba(255, 255, 255, 0.1);
 }
-.sale-poster__dd {
+.promo-poster__dd {
     position: absolute;
     top: auto;
     bottom: 0;
@@ -149,29 +149,29 @@
     border-radius: 16px;
 }
 
-.sale-card {
+.promo-card {
     background-color: var(--color-brand);
     border-radius: 16px;
     padding: 32px 32px 40px;
     transition: box-shadow var(--trs-base);
 }
-.sale-poster--alt .sale-card {
+.promo-poster--alt .promo-card {
     padding-top: 40px;
 }
 
-.sale-card__action {
+.promo-card__action {
     margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.sale-poster--alt .sale-card__action {
+.promo-poster--alt .promo-card__action {
     margin-top: 0;
 }
-.sale-card__action-btn {
+.promo-card__action-btn {
     flex: 0 0 auto;
 }
-.sale-card__btn-arrow {
+.promo-card__btn-arrow {
     flex: 0 0 auto;
     margin-left: 20px;
 }
@@ -181,46 +181,46 @@
     color: var(--color-white);
 }
 
-.sale-poster:hover .sale-poster__dd {
+.promo-poster:hover .promo-poster__dd {
     transform: translateY(0%);
 }
 
-.sale-poster:hover .sale-poster__action {
+.promo-poster:hover .promo-poster__action {
     transform: translateY(0%);
 }
 
-.sale-poster:hover .sale-card {
+.promo-poster:hover .promo-card {
     box-shadow: 0 -4px 44px 0 rgba(240, 50, 38, 0.5);
 
 }
 
-.sale-poster--alt:hover .sale-poster__dd {
+.promo-poster--alt:hover .promo-poster__dd {
     transform: translateY(0%);
 }
 
-.sale-poster--alt:hover {
+.promo-poster--alt:hover {
     background-color: var(--color-red);
     box-shadow: 0 -4px 44px 0 rgba(240, 50, 38, 0.5);
 }
-.sale-poster--alt:hover .sale-poster__dd  {
+.promo-poster--alt:hover .promo-poster__dd  {
     background-color: var(--color-red);
 }
 
-.sale-poster--alt:hover .sale-poster__title {
+.promo-poster--alt:hover .promo-poster__title {
     color: var(--color-white);
 }
 
-.sale-poster--alt:hover .sale-poster__content {
+.promo-poster--alt:hover .promo-poster__content {
     color: var(--color-white);
 }
 
-.sale-poster--alt:hover .text-guide ul > li::before {
+.promo-poster--alt:hover .text-guide ul > li::before {
     border-top: 2px solid var(--color-white);
 }
 .swiper {
     overflow: visible !important;
 }
-.sale-card__action-btn{
+.promo-card__action-btn{
     padding: 0 22px;
     height: 40px;
     border: none;
