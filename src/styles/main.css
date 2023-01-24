@@ -28,6 +28,7 @@
     --color-gray:#959595;
     --main-text-color : #191919 ;
     --color-bg-3 : #343434;
+    --color-header-links : #6e6e6e;
 
 }
 ul , ol ,li {
@@ -54,6 +55,7 @@ body {
     line-height: 1.2;
     background-color: #fff;
     color: var(--main-text-color);
+    overflow-x: hidden;
 }
 .content {
     max-width: calc(1330px + 16px *2);
