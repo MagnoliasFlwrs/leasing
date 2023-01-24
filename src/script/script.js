@@ -114,6 +114,24 @@ secondMobileBack.forEach((link) => {
       })
   })
 })
+// linksToSecond.forEach((link) => {
+//   link.addEventListener('click' ,(e) => {
+//       clearClasses(e)
+//       e.target.closest('.burger__submenu__item').querySelector('.submenu3lvl').classList.add('__transformation');
+//       linksToSecond.forEach((link) => {
+//           link.classList.remove('dropright')
+//       })
+//   })
+// })
+// secondMobileBack.forEach((link) => {
+//   link.addEventListener('click', (e) => {
+//       e.target.closest('.burger__submenu__item').querySelector('.submenu3lvl').classList.remove('__transformation');
+//       e.target.closest('.burger__link__item').querySelector('.burger__submenu').classList.add('__transform');
+//       linksToSecond.forEach((link) => {
+//           link.classList.add('dropright')
+//       })
+//   })
+// })
 // promo modal
 
 promoBtns.forEach((btn) => {
@@ -164,6 +182,11 @@ linkWraps.forEach((link) => {
       }
   })
 })
+allSubmenues.forEach((item) => {
+  item.addEventListener('mouseenter', ()=> {
+    overlay.classList.add('open');
+  } )
+})
 function hideSubmenu() {
   allSubmenues.forEach((item) => {
       if (item.classList.contains('open')) {
@@ -172,6 +195,7 @@ function hideSubmenu() {
       }
   })
 }
+
 
 function showSubMenu(subMenu) {
   subMenu.classList.add('open');
@@ -183,21 +207,3 @@ function showSubMenu(subMenu) {
   });
 
 }
-linksToSecond.forEach((link) => {
-  link.addEventListener('click' ,(e) => {
-      clearClasses(e)
-      e.target.closest('.burger__submenu__item').querySelector('.submenu3lvl').classList.add('__transformation');
-      linksToSecond.forEach((link) => {
-          link.classList.remove('dropright')
-      })
-  })
-})
-secondMobileBack.forEach((link) => {
-  link.addEventListener('click', (e) => {
-      e.target.closest('.burger__submenu__item').querySelector('.submenu3lvl').classList.remove('__transformation');
-      e.target.closest('.burger__link__item').querySelector('.burger__submenu').classList.add('__transform');
-      linksToSecond.forEach((link) => {
-          link.classList.add('dropright')
-      })
-  })
-})

@@ -99,7 +99,7 @@
 }
 
 .submenu.open {
-    top: 155%;
+    top: 135%;
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
@@ -133,7 +133,7 @@
     letter-spacing: .01em;
 }
 .navigation > li:hover .submenu {
-    top: 155%;
+    top: 135%;
     visibility: visible;
     opacity: 1;
     transform: translate3d(0,0,0);
