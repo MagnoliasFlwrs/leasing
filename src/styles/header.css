@@ -3,7 +3,8 @@
     top: 0;
     width: 100%;
     background-color: #ffffff;
-    z-index: 9999;
+    z-index: 99;
+    padding: 15px 0;
     /* box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.2); */
 }
 .header._onscroll {
@@ -25,119 +26,77 @@
     padding: 10px 0;
     z-index: 10;
 }
-.menu__wrapper {
+.navigation {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     list-style: none;
 }
-.menu__wrapper li {
-    position: relative;
-    padding: 30px 15px;
+.navigation > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.navigation__button{
-    margin-left: 100px;
+.navigation > li:not(:last-child) {
+    margin-right: 25px;
 }
-.dropdown::after {
+.navigation:after, .submenu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.navigation > li > a:hover {color: var(--color-gray);}
+.dropdown:after {
     content: "\f107";
     font-family: FontAwesome;
     margin-left: 4px;
-    vertical-align: center;
+    font-size: 0.9em;
+    vertical-align: bottom;
+    display: inline-block;
+
+}
+.dropup:after {
+    content: "\f106";
+    font-family: FontAwesome;
+    margin-left: 4px;
+    vertical-align: bottom;
     display: inline-block;
 }
-.menu__wrapper li.active-menu > a {
-    /* color: #1151d3; */
-}
-.menu__wrapper li:hover > .dropdown::after {
-  /* color: #1151d3; */
-}
-
-.menu__wrapper li:hover > a {
-  /* color: #1151d3; */
-}
-
 .submenu {
-    list-style: none;
     position: absolute;
-    left: 0;
-    top: 110%;
-    width: 270px;
-    background: #ffffff;
-    box-shadow: 0px 10px 8px 7px rgba(34, 60, 80, 0.2);
-    padding: 20px 0;
-    border-radius: 5px;
-    /* border-top: 3px solid #1151d3; */
+    top: -100%;
+    left: 30%;
+    border-top: 1px solid #e5e5e5;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.07);
+    background-color: #ffffff;
     opacity: 0;
-    z-index: 99;
+    border-radius: 18px;
     visibility: hidden;
-    transition: all 0.3s linear;
-}
-.menu__wrapper li:hover > .submenu {
-    opacity: 1;
-    visibility: visible;
-    top: 100%;
-}
-.menu__wrapper li .submenu li {
-    padding: 0;
-}
-.menu__wrapper li .submenu li a {
-    padding: 5px 25px;
-    font-size: 15px;
-    font-family: "Manrope", sans-serif;
-    font-weight: 600;
-    line-height: 1.7em;
-    display: block;
-    position: relative;
+    width: 50%;
+    min-height: 300px;
+    padding: 40px ;
+    transform: translateY(-10px);
+    transition: top .7s ease-in-out , opacity 0.3s 0.4s ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
     z-index: 1;
 }
-.menu__wrapper li .submenu li a::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    /* background: #1151d3; */
-    width: 10px;
-    height: 3px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s linear;
+.submenu__item-title > h3{
+    margin-bottom: 30px;
 }
-.menu__wrapper li .submenu li.active > a {
-    /* color: #005de0; */
-    padding-left: 30px;
-    transition: all 0.5s linear;
+.second__submenu__li {
+    margin-bottom: 15px;
 }
 
-.menu__wrapper li .submenu li.active > a::before {
-    opacity: 1;
+.submenu.open {
+    top: 155%;
     visibility: visible;
-    left: 15px;
-}
-
-.menu__wrapper li .submenu li:hover > a {
-    /* color: #005de0; */
-    padding-left: 35px;
-}
-
-.menu__wrapper li .submenu li:hover > a::before {
     opacity: 1;
-    visibility: visible;
-    left: 15px;
+    transform: translateY(0);
 }
 
 
 .nav__btn {
-    /* padding: 5px 8px;
-    color: #ffffff;
-    border: none;
-    background-color: #1151d3;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 15px;
-    font-family: "Manrope", sans-serif;
-    font-weight: 700;
-    line-height: 1.7em;
-    white-space: nowrap; */
     cursor: pointer;
     display: flex;
     height: 40px;
@@ -151,10 +110,7 @@
     font-size: 16px;
     line-height: 24px;
     background-color: #ffffff;
-
-}
-.nav__btn:hover {
-    color: var(--second-text-color);
+    margin-left: 100px;
 }
 
 @media (max-width: 1200px) {
@@ -196,10 +152,7 @@
         padding: 30px 5px;
     }
 }
-/* @media (max-width: 860px) {
-    .links__font__style {
-        font-size: 13px;
-        line-height: 14x;
-    }
-} */
+
+
+
 

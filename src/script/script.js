@@ -14,6 +14,7 @@ const promoBtns = document.querySelectorAll('.promo-card__action-btn')
 const promoModal = document.querySelector('.modal__form')
 const closeModal = document.querySelector('.modal__form-close')
 
+
 // slider
 slides.forEach((slide) => {
   slide.addEventListener('mouseenter' ,() => {
@@ -132,3 +133,71 @@ const modalClose = () => {
   })
 }
 modalClose()
+
+// menu
+const dropdowns = document.querySelectorAll('.dropdown')
+const allSubmenues = document.querySelectorAll('.submenu')
+let subMenu= "";
+
+function clearIconClass() {
+  let navlinks = document.querySelectorAll('.nav__link')
+  navlinks.forEach((link) => {
+      if (link.classList.contains('dropup')) {
+          link.classList.remove('dropup')
+      }
+  })
+}
+
+linkWraps.forEach((link) => {
+  link.addEventListener('mouseenter', (e) => {
+      if (e.target.closest('.link__wrapper')) {
+          subMenu = e.target.closest('.link__wrapper').querySelector('.submenu');
+          if (!subMenu.classList.contains('open')) {
+              clearIconClass()
+              e.target.closest('.link__wrapper').querySelector('.dropdown').classList.add('dropup')
+              hideSubmenu()
+              showSubMenu(subMenu)
+          } else {
+              clearIconClass()
+              hideSubmenu()
+          }
+      }
+  })
+})
+function hideSubmenu() {
+  allSubmenues.forEach((item) => {
+      if (item.classList.contains('open')) {
+          item.classList.remove('open');
+          overlay.classList.remove('open');
+      }
+  })
+}
+
+function showSubMenu(subMenu) {
+  subMenu.classList.add('open');
+  overlay.classList.add('open');
+  overlay.addEventListener('mouseenter', () => {
+      clearIconClass()
+      subMenu.classList.remove('open');
+      overlay.classList.remove('open');
+  });
+
+}
+linksToSecond.forEach((link) => {
+  link.addEventListener('click' ,(e) => {
+      clearClasses(e)
+      e.target.closest('.burger__submenu__item').querySelector('.submenu3lvl').classList.add('__transformation');
+      linksToSecond.forEach((link) => {
+          link.classList.remove('dropright')
+      })
+  })
+})
+secondMobileBack.forEach((link) => {
+  link.addEventListener('click', (e) => {
+      e.target.closest('.burger__submenu__item').querySelector('.submenu3lvl').classList.remove('__transformation');
+      e.target.closest('.burger__link__item').querySelector('.burger__submenu').classList.add('__transform');
+      linksToSecond.forEach((link) => {
+          link.classList.add('dropright')
+      })
+  })
+})
