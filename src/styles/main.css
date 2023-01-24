@@ -143,3 +143,19 @@ p , a {
     opacity: 1;
     visibility: visible;
 }
+.modal__overlay {
+    position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, 0.9);
+	z-index: 100;
+	opacity: 0;
+	visibility: hidden;
+    transition: all 0.4s 0.3s ease;
+}
+.modal__overlay.open {
+    opacity: 1;
+    visibility: visible;
+}

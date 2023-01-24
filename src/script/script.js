@@ -13,6 +13,7 @@ const burgerLinks = document.querySelectorAll('.burger__navigation__item')
 const promoBtns = document.querySelectorAll('.promo-card__action-btn')
 const promoModal = document.querySelector('.modal__form')
 const closeModal = document.querySelector('.modal__form-close')
+const modalOverlay = document.querySelector('.modal__overlay')
 
 
 // slider
@@ -136,18 +137,18 @@ secondMobileBack.forEach((link) => {
 
 promoBtns.forEach((btn) => {
   btn.addEventListener('click' , () => {
-    overlay.classList.add('open')
+    modalOverlay.classList.add('open')
     promoModal.classList.add('opn')
   })
 })
 const modalClose = () => {
   closeModal.addEventListener('click' , () => {
     promoModal.classList.remove('opn')
-    overlay.classList.remove('open')
+    modalOverlay.classList.remove('open')
   })
   overlay.addEventListener('click' , () => {
     promoModal.classList.remove('opn')
-    overlay.classList.remove('open')
+    modalOverlay.classList.remove('open')
   })
 }
 modalClose()
