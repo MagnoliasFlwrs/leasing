@@ -83,9 +83,10 @@
 }
 .submenu__item-title > h3{
     margin-bottom: 20px;
-    font-size: 1em;
-    line-height: 1.6;
     font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #191919;
     color: var(--main-text-color);
 }
 .second__submenu__li {
@@ -128,8 +129,9 @@
 }
 .second__submenu__li > a {
     color: var(--color-header-links);
-    font-size: 0.8em;
-    line-height: 1.3;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
     letter-spacing: .01em;
 }
 .navigation > li:hover .submenu {
@@ -144,9 +146,6 @@
         width: 80%;
         height: 80%;
     }
-    /* .links__font__style {
-        font-size: 14px;
-    } */
     .nav__btn {
         padding: 7px 10px;
         font-size: 14px;
