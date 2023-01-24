@@ -183,9 +183,11 @@ linkWraps.forEach((link) => {
       }
   })
 })
+const headerClass = document.querySelector('.header')
 allSubmenues.forEach((item) => {
   item.addEventListener('mouseenter', ()=> {
     overlay.classList.add('open');
+    headerClass.classList.add('open__submenu')
   } )
 })
 function hideSubmenu() {
@@ -193,6 +195,7 @@ function hideSubmenu() {
       if (item.classList.contains('open')) {
           item.classList.remove('open');
           overlay.classList.remove('open');
+          headerClass.classList.remove('open__submenu')
       }
   })
 }
@@ -201,6 +204,7 @@ function hideSubmenu() {
 function showSubMenu(subMenu) {
   subMenu.classList.add('open');
   overlay.classList.add('open');
+  headerClass.classList.add('open__submenu')
   overlay.addEventListener('mouseenter', () => {
       clearIconClass()
       subMenu.classList.remove('open');
