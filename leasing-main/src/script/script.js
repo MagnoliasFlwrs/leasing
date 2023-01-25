@@ -14,6 +14,7 @@ const promoBtns = document.querySelectorAll('.promo-card__action-btn')
 const promoModal = document.querySelector('.modal__form')
 const closeModal = document.querySelector('.modal__form-close')
 const modalOverlay = document.querySelector('.modal__overlay')
+const submenuWrapper = document.querySelector('.submenu__wrapper')
 
 
 // slider
@@ -154,6 +155,7 @@ const modalClose = () => {
 modalClose()
 
 // menu
+
 const dropdowns = document.querySelectorAll('.dropdown')
 const allSubmenues = document.querySelectorAll('.submenu')
 let subMenu= "";
@@ -187,15 +189,19 @@ const headerClass = document.querySelector('.header')
 allSubmenues.forEach((item) => {
   item.addEventListener('mouseenter', ()=> {
     overlay.classList.add('open');
-    headerClass.classList.add('open__submenu')
+    // headerClass.classList.add('open__submenu')
   } )
+  item.addEventListener('mouseleave', ()=> {
+    clearIconClass()
+    hideSubmenu()
+  })
 })
 function hideSubmenu() {
   allSubmenues.forEach((item) => {
       if (item.classList.contains('open')) {
           item.classList.remove('open');
+          item.closest('.submenu__wrapper').classList.remove('open')
           overlay.classList.remove('open');
-          headerClass.classList.remove('open__submenu')
       }
   })
 }
@@ -204,7 +210,8 @@ function hideSubmenu() {
 function showSubMenu(subMenu) {
   subMenu.classList.add('open');
   overlay.classList.add('open');
-  headerClass.classList.add('open__submenu')
+  subMenu.closest('.submenu__wrapper').classList.add('open')
+  // headerClass.classList.add('open__submenu')
   overlay.addEventListener('mouseenter', () => {
       clearIconClass()
       subMenu.classList.remove('open');
@@ -212,3 +219,5 @@ function showSubMenu(subMenu) {
   });
 
 }
+
+
