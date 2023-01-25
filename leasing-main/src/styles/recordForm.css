@@ -25,6 +25,11 @@
     border: none;
     margin-bottom: 25px;
 }
+input:focus {
+    border: none;
+    box-shadow: -1px 0px 30px 3px rgba(255, 0, 0, 0.2);
+    outline: none;
+}
 .form__client-wrap {
     display: flex ;
     width: 100%;
